@@ -1,0 +1,2 @@
+phone 不可以是int类型
+sex 要是char类型

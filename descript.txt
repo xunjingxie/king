@@ -1,1 +1,2 @@
 这是一个个人积累开发经验的地方
+git remote add origin https://github.com/xunjingxie/math.git
