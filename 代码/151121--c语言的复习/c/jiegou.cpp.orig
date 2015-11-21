@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int b = 2 ; 
+	int a = 2;
+	if(a<b){
+		puts("a<b");
+	}else if(a>b){
+ 		puts("a>b");
+	}else{
+ 		puts("a==b");
+	}
+	
+	char ch = 'a';//use '' for char
+	switch(ch){
+		case 'a':
+			puts("a");break;
+		case 'b':
+			puts("b");break;			
+		default :
+			puts("over");
+	}
+	
+	return 0;
+}

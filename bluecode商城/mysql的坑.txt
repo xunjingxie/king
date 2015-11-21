@@ -1,2 +1,60 @@
-phone ��������int����
-sex Ҫ��char����
+﻿	
+性别的字段
+	sex 要是char类型
+转换出错还是设计问题
+	phone 不可以是int类型
+	mysql插入数字都变成2147483647的解决方法
+where的坑
+	where 前面有空格
+表单格式更好
+	form  的循序可用对应数据库字段的循序
+
+地址消失之谜
+	 if($name=="" || $phone=="" || $sex =="" || $password =="" || $address = '' )
+	描述:post返回得到，可是插入数据库的是空值
+地址dz和address没有字段姿迷
+	tpl的缓存让程序访问老的tpl，所以php使用address没有收到新的address而得到dz
+	描述:报错参数不对，post回去没有
+OSAdmin的fetchAll non-object之谜
+	由于fetch是一个对象的方法，像result，可是如果sql语句出错就会出现这种报错
+	必然name=king可是name="" 可以用
+	描述:方法没有对象调用，又没有定义该方法，（可见该方法是api)
+数组的错觉
+	 $user_data=array("status"=>0);  >=
+	 描述:看起来像大于等于的数学符号，实际却是把他status赋值为0
+管理员的操作
+	sessioin 和 操作结合起来，如果登陆状态，不可以怎样。。。
+	描述：避免英法错误
+日志的使用
+	SysLog::addLog ( UserSession::getUserName(), 'PAUSE',  'User' ,$user_id ,json_encode($user_data) );
+	描述:结合类的方法等信息
+给力的偷写代码
+	可用del(代码最少) update(熟悉交户） add（熟悉数据传递) find(前面的基础)
+	其他封停(updata的基础)
+	描述:也许有更好的方法把
+排错的给力二人组
+	echo dump
+	描述：可用有决绝神奇的消失之谜
+分类引发的错误
+	debug.php config.php 
+	描述：xx老师把debug模式设为false 导致使用的config的配置so不是xx同学代码问题or人品问题
+全盘的封停问题
+	0，1代表的不同
+	描述:会影响全局的要小心设计
+没有停封之谜
+	if ($method == 'pause' && ! empty ( $userid )) { 
+	这种事if语句，如果不满足，屁都不做userid != user_id
+	描述:你确定停封吗?是的，然后，什么的没有发生.
+文件名的漂亮之旅
+	文件名如果是这种格式product.php product_add.php product_modify.php他们就会拍在一起
+	描述:如果文件名有规律排列，维护代码更有信心
+没有改类名
+	product里的都改了可是不行,小心除了靠眼睛还有有逻辑。
+	描述：product没有这类
+基础设施的成长及衍生
+	就像samrty和osadmin thinkphp
+	描述：原生开发和使用osadmin开发，何用smaty
+
+
+		
+	
